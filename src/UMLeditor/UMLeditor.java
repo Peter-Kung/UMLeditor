@@ -15,7 +15,7 @@ public class UMLeditor extends JFrame {
 	
 	public static void main(String[] args) {
 		UMLeditor umleditor = new UMLeditor();
-		umleditor.setTitle("UML Editor");
+		umleditor.setTitle("110525010---UML Editor");
 		umleditor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		umleditor.setSize(1200, 700);
 		umleditor.setVisible(true);

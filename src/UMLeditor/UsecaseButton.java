@@ -9,6 +9,6 @@ public class UsecaseButton extends Button {
 		name = "UsecaseButton";
 		setBounds(0,420,80,80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 	}
 }

@@ -20,8 +20,9 @@ public class Menu extends JMenuBar{
 	private JMenuItem ungroup;
 	private JMenuItem change;
 	private MyPanel mypanel;
+	
 	public Menu() {
-		mypanel=MyPanel.getInstance();
+		mypanel = MyPanel.getInstance();
 		setBounds(0, 0, 75, 20);
 		filemenu=new JMenu("File");
 		editmenu=new JMenu("Edit");
@@ -44,8 +45,7 @@ public class Menu extends JMenuBar{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			//mypanel.group();
+			mypanel.group();
 		}
 		
 	}
@@ -53,8 +53,8 @@ public class Menu extends JMenuBar{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			//mypanel.ungroup();
+			
+			mypanel.ungroup();
 		}
 		
 	}
@@ -62,7 +62,6 @@ public class Menu extends JMenuBar{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
 			JFrame ck=new JFrame("Change Object Name");
 			ck.setSize(500,100);
 			ck.getContentPane().setLayout(new GridLayout(0,1));
@@ -84,13 +83,12 @@ public class Menu extends JMenuBar{
 
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
-					//mypanel.changename(Text.getText());
+					mypanel.changeName(Text.getText());
 					ck.dispose();
 				}
-				
+
 			});
-			
+
 			cancel.addActionListener(new ActionListener()	{
 
 				@Override
@@ -98,11 +96,11 @@ public class Menu extends JMenuBar{
 					// TODO Auto-generated method stub
 					ck.dispose();
 				}
-				
+
 			}
 					);
-		
+
 		}
-		
+
 	}
 }

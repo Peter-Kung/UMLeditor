@@ -9,6 +9,6 @@ public class ClassButton extends Button {
 		name = "ClassButton";
 		setBounds(0, 340, 80, 80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 	}
 }

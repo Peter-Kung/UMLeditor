@@ -10,6 +10,6 @@ public class GeneralizeButton extends Button {
 		name = "GeneralizeButton";
 		setBounds(0,180,80,80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 	}
 }

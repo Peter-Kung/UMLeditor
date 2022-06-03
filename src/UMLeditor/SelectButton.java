@@ -12,7 +12,7 @@ public class SelectButton extends Button {
 		name = "SelectButton";
 		setBounds(0, 20, 80, 80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 		
 	}
 	

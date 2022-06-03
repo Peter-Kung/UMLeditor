@@ -10,7 +10,7 @@ public class AssociateButton extends Button {
 		name = "AssociateButton";
 		setBounds(0,100,80,80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 		
 	}
 }

@@ -9,6 +9,6 @@ public class CompositeButton extends Button {
 		name = "CompositeButton";
 		setBounds(0,260,80,80);
 		setBackground(null);
-		addActionListener(new Listener(name));
+		addActionListener(new Listener(name, buttonIndex));
 	}
 }
